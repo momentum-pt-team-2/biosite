@@ -9,3 +9,4 @@
    - You have access to the user model to render
    - In your view, remember to get *your* user object
 - Name the url after yourself
+- Option to include quote, weather info, or other data from external API
