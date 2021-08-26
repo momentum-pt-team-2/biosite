@@ -4,7 +4,7 @@ import os
 import sys
 
 
-def rebecca_trying_to_break_it():
+def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'core.settings')
     try:
