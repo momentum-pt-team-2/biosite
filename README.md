@@ -2,7 +2,7 @@
 
 ### This is a Django practice app that will render bios and work samples for the class
 
-### TODO for each student
+
 - Remember to work in a branch
     ` git checkout -b <branch name>`
 - Create a url, view, and template specific to you.
