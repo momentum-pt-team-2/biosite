@@ -11,6 +11,14 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 import os
 from pathlib import Path
+import environ
+
+env = environ.Env(
+    # set casting, default value
+    DEBUG=(bool, False)
+)
+
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -132,3 +140,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles/')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'students.User'
+
+EMAIL_HOST= 'smtp.gmail.com'
+EMAIL_HOST_USER= env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD= env("EMAIL_HOST_PASSWORD")
+EMAIL_USE_TLS= True
+EMAIL_PORT= 587
