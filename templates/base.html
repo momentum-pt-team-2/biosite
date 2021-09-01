@@ -1,46 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{% static 'css/output.css' %}" />
-        <script src="{% static 'js/index.js' %}" defer></script>
-        <link rel="shortcut icon" href="#" />
-        <title>Document</title>
-    </head>
-    <body>
-        {% block content %} {% endblock %}
-        <script>
-            function isElementInViewport(el) {
-                var rect = el.getBoundingClientRect();
-                return (
-                    rect.top >= 0 &&
-                    rect.left >= 0 &&
-                    rect.bottom <=
-                        (window.innerHeight ||
-                            document.documentElement.clientHeight) &&
-                    rect.right <=
-                        (window.innerWidth ||
-                            document.documentElement.clientWidth)
-                );
-            }
-
-            var items = document.querySelectorAll(".timeline li");
-
-            // code for the isElementInViewport function
-
-            function callbackFunc() {
-                for (var i = 0; i < items.length; i++) {
-                    if (isElementInViewport(items[i])) {
-                        items[i].classList.add("in-view");
-                    }
-                }
-            }
-
-            window.addEventListener("load", callbackFunc);
-            window.addEventListener("scroll", callbackFunc);
-        </script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+    
+</body>
 </html>
