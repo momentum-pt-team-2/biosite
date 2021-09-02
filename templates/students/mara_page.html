@@ -1,7 +1,12 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
 {% load static %}
-
+{% block scripts %}
+<script src="{% static 'js/scripts.js' %}" defer></script>
+{% endblock %}
+{% block title %}
+<title>MARA</title>
+{% endblock %}
 {% block content %}
 <!DOCTYPE html>
 <html>
@@ -9,13 +14,14 @@
 <head>
   <title>Biosite</title>
 
-  <style>
+  <!-- <style>
     * { border: 2px solid #dedede; padding: 15px; margin: 15px; }
     html { margin: 0; padding: 0; }
     body { max-width: 600px; font-family: sans-serif; color: #333; }
-  </style>
+  </style> -->
 </head>
-<section id="quote-of-the-day"></section>
+<div class="quote" id='random-quote'></div></div>
+
 <div class="meta-image"> <h1> Mara's Page </h1> 
   <img width="470" height="300" src= "{% static 'img/img_0468.jpeg' %}"				
           </div>
