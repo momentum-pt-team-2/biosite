@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+<!-- <h1>DANIEL SHEARIN</h1>
+<section id='random-quote'></section> -->
+
+
+<div id="bio" class="block"><a href="{% url 'bio' %}">
+<h3 class="title"><span>BIO</span></h3>
+<article class="info">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt placeat reiciendis, blanditiis in ad inventore, debitis dolorem aut pariatur ipsam perferendis iure est impedit tempora dolor nisi distinctio? Cupiditate, accusantium.
+</article>
+</a>
+</div>
+
+<div id="work" class="block"><a href="{% url 'work' %}">
+    <h3 class="title"><span>WORK SAMPLES</span></h3>
+    <article class="info">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt placeat reiciendis, blanditiis in ad inventore, debitis dolorem aut pariatur ipsam perferendis iure est impedit tempora dolor nisi distinctio? Cupiditate, accusantium.
+    </article>
+    </a>
+</div>
+
+<center><img id='truck_photo' src="static/img/ice cream 2.jpg">
+<a href="{% url 'contact' %}"><h3 class="title"><span>CONTACT</span></h3></a>
+</center>
+
+{% endblock %}

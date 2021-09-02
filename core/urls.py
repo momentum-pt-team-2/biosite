@@ -20,7 +20,12 @@ from students import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('registration.backends.simple.urls')),
-    path('marabrie/', views.maraspage, name="maraspage")
+    path('marabrie/', views.maraspage, name="maraspage"),
+    path('danielshearin', views.daniel_page, name='daniel_page'),
+    path('danielshearin/work', views.work, name='work'),
+    path('danielshearin/bio', views.bio, name='bio'),
+    path('danielshearin/contact', views.contact, name='contact'),
+    
 ]
 
 

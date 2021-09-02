@@ -1,0 +1,136 @@
+.page-header {
+    margin-top: 0;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    margin-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color:#c2c7c4;
+    color: #383b39;
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "main sidebar"
+}
+
+.page-header > a:link,
+.page-header > a:visited {
+    background-color:#c2c7c4;
+    color: #383b39;
+}
+
+
+
+.name {
+    grid-area: main;
+}
+
+.quote {
+    position: absolute;
+    bottom: 20%;
+    right: 50px;
+    grid-area: sidebar;
+}
+
+body {
+    background-color: rgb(17, 17, 17);
+    background-image: url('ufoBirdsDark.png');
+    background-size: 170%;
+    background-repeat: no-repeat;
+}
+
+h1, h2, h3, h4, h5, h6, p, article, div {
+    font-family: 'avenir', avenir, sans-serif;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 30pt;
+}
+
+h3 {
+    color: #c2c7c4;
+    margin-left: 30px;
+}
+
+h2 {
+    color: #383b39;
+    font-size: medium;
+}
+
+.title span:hover,
+.centerblock span:hover {
+    background-color: #383b39;
+    color:#c2c7c4;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+
+    text-align: right;
+    font-size: x-small;
+    line-height: 200%;
+}
+
+.info {
+    background-color: #c2c7c4;
+    color: #383b39;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.contact {
+    color: #383b39;
+    padding: 20px;
+    margin-left: 0px;
+    margin-right: 30px;
+
+}
+
+.block {
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.centerblock,
+.centerblock > a:link,
+.centerblock > a:visited,
+h2 > a:link,
+h2 > a:visited {
+    margin-top: 50px;
+    color: #383b39;
+}
+
+img {
+    width: 25%;
+    height: auto;
+    margin-top: 130px;
+
+}
+
+/* div.form
+{
+    display: block;
+    text-align: left;
+} */
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:active { text-decoration: none; }
+.page-header > a:link,
+.centerblock > a:link { color: #c2c7c4 }
