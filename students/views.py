@@ -44,7 +44,7 @@ def contact(request):
         subject= "A Visitor's Message"
             
         message= name + email + message
-        send_mail(subject, message, 'danielshearin@gmail.com', [email])
+        send_mail(subject, message, email, ['danielshearin@gmail.com'])
 
 
         context= {'form': form}
