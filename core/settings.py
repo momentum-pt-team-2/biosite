@@ -141,8 +141,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'students.User'
 
-EMAIL_HOST= 'smtp.gmail.com'
-EMAIL_HOST_USER= env("EMAIL_HOST_USER")
-EMAIL_HOST_PASSWORD= env("EMAIL_HOST_PASSWORD")
-EMAIL_USE_TLS= True
-EMAIL_PORT= 587
+# TODO set up backend of production, on Rebecca
+# EMAIL_HOST= 'smtp.gmail.com'
+# EMAIL_HOST_USER= env("EMAIL_HOST_USER")
+# EMAIL_HOST_PASSWORD= env("EMAIL_HOST_PASSWORD")
+# EMAIL_USE_TLS= True
+# EMAIL_PORT= 587
+EMAIL_BACKEND= 'django.core.mail.backends.console.EmailBackend'
+DEFAULT_FROM_EMAIL = 'test@test.com'
