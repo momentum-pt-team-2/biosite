@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %} 
+
+<div id="contactpage" class="block">
+    <h3>CONTACT</h3>
+    <article class="contact">
+
+            <form action="" method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <input type="submit" value="Submit"/>
+            </form>
+<!-- 
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
+                {{ form }}
+                <button type="submit">SEND</button>
+            </form> -->
+
+    </article>
+</div>
+
+<!-- <center><img src="static/img/ice cream 2.jpg"></center> -->
+
+{% endblock %}
